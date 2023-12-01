@@ -80,7 +80,7 @@ public final class DrawNumberApp implements DrawNumberViewObserver {
         System.exit(0);
     }
     
-    public List<Integer> getParam() throws IOException{
+    private List<Integer> getParam() throws IOException{
         List<Integer> res = new ArrayList<>();
         try {
             final InputStream is = getClass().getClassLoader().getResourceAsStream(FILE_NAME);
